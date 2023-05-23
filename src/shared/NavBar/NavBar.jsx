@@ -41,7 +41,7 @@ const NavBar = () => {
                </div>
 
                <Link to="/login">
-                  <button className='btn'>Log In</button>
+                  <button className="btn bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 border-none">LOGIN IN</button>
                </Link>
             </div>
          </div>
