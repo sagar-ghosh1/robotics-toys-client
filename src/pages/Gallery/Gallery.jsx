@@ -5,7 +5,7 @@ const Gallery = () => {
         <div className='mt-24 mb-24 text-center'>
             <h5 className='text-2xl font-bold text-purple-500 mb-2'>Photo Gallery</h5>
             <h2 className='text-4xl font-bold mb-8'>kids with Robort toy</h2>
-            <div className='grid lg:grid-cols-4 grid-cols-1 gap-7 max-w-[1200px] mx-auto' data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+            <div className='grid lg:grid-cols-4 grid-cols-1 gap-7 max-w-[1200px] mx-auto' data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                 <div>
                     <img className='rounded-md' src="https://rb.gy/2qsfy" alt="" />
                 </div>
