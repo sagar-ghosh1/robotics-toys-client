@@ -13,7 +13,7 @@ const Banner = () => {
           <div className='text-white'>
             <h1 className="text-5xl font-bold">Best Toys Robot of all Kids!</h1>
             <p className="py-6 font-medium">Cozmo has a charming and playful personality. It expresses a wide range of emotions through its expressive eyes and animated movements. Kids can develop an emotional connection with Cozmo as it reacts to their interactions.</p>
-            <button className="btn btn-primary">Get Started</button>
+            <button className="btn bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 border-none">Back to Home</button>
           </div>
         </div>
       </div>
