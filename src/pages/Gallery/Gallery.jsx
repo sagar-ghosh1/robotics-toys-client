@@ -7,13 +7,28 @@ const Gallery = () => {
             <h2 className='text-4xl font-bold'>kids with Robort toy</h2>
             <div className='grid lg:grid-cols-4 grid-cols-1 gap-7 max-w-[1200px] mx-auto' >
                 <div>
-                    <img src="https://rb.gy/2qsfy" alt="" />
+                    <img className='rounded-md' src="https://rb.gy/2qsfy" alt="" />
                 </div>
                 <div>
-                    <img src="https://rb.gy/t60xr" alt="" />
+                    <img className='rounded-md' src="https://rb.gy/t60xr" alt="" />
                 </div>
-                <div>
-                    <img src="https://rb.gy/5o2z7" alt="" />
+                <div className='imgBox'>
+                    <img className='rounded-md' src="https://rb.gy/xtlu2" alt="" />
+                </div>
+                <div className='imgBox'>
+                    <img className='rounded-md' src="https://rb.gy/z4mq8" alt="" />
+                </div>
+                <div className='imgBox'>
+                    <img className='rounded-md' src="https://rb.gy/14cci" alt="" />
+                </div>
+                <div className='imgBox'>
+                    <img className='rounded-md' src="https://rb.gy/p578i" alt="" />
+                </div>
+                <div className='imgBox'>
+                    <img className='rounded-md' src="https://rb.gy/83c0r" alt="" />
+                </div>
+                <div className='imgBox'>
+                    <img className='rounded-md' src="https://rb.gy/t9hb6" alt="" />
                 </div>
             </div>
         </div>
