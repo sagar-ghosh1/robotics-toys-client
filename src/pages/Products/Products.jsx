@@ -3,120 +3,30 @@ import { FaArrowRight } from 'react-icons/fa';
 
 const Products = () => {
    return (
-      <div className='bg-slate-100 py-14'>
-         <div>
-            <h6 className='font-medium text-center'>What we offer for you</h6>
-            <h1 className='text-6xl font-medium text-center mb-14'> <span className='text-orange-500'>New</span> Products</h1>
-         </div>
-         <div className='flex items-center justify-center container mx-auto'>
-            <div className='grid gap-6 grid-cole-1 lg:grid-cols-2'>
-
-               <div className='rounded-xl shadow-xl bg-white'>
-                  <div className='p-5 flex flex-col'>
-                     <div className='rounded-xl overflow-hidden flex'>
-                        <div className='w-[25%]'>
-                           <img className='m-auto' src="https://rb.gy/py18s" alt="" />
-                        </div>
-                        <div className='w-[75%] ml-8'>
-                           <h1 className='text-2xl font-medium mb-6 text-green-500'>Pet Sitting</h1>
-                           <p className='font-medium'>Event time you check your cat or pet, we will definitely check and groom your animal at the some time</p>
-                           <div className='flex'>
-                              <p className='mt-5 font-bold'>Read More</p>
-                              <p className='mt-6 ml-3'><FaArrowRight></FaArrowRight></p>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
+      <div className='container m-auto'>
+         <div className='mt=14 mb-14'>
+            <h1 className='text-4xl text-center'>Frequently Asked Questions</h1>
+            <p className='text-center mt-2'>Find your answer</p>
+            <div className='grid grid-cols-2 md:grid-cols-4 gap-4 text-center'>
+               <div className='bg-sky-100 p-5 rounded-lg shadow-lg' data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                  <div></div>
+                  <img className='h-20 m-auto' src="https://i.ibb.co/zGkdbBT/best.png" alt="" />
+                  <h3 className='my-3 text-xl font-bold'>Best Service</h3>
                </div>
-
-               <div className='rounded-xl shadow-xl bg-white'>
-                  <div className='p-5 flex flex-col'>
-                     <div className='rounded-xl overflow-hidden flex'>
-                        <div className='w-[25%]'>
-                           <img className='m-auto' src="https://rb.gy/utjsm" alt="" />
-                        </div>
-                        <div className='w-[75%] ml-8'>
-                           <h1 className='text-2xl font-medium mb-6 text-green-500'>Pet Grooming</h1>
-                           <p className='font-medium'>Event time you check your cat or pet, we will definitely check and groom your animal at the some time</p>
-                           <div className='flex'>
-                              <p className='mt-5 font-bold'>Read More</p>
-                              <p className='mt-6 ml-3'><FaArrowRight></FaArrowRight></p>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
+               <div className='bg-sky-100 p-5 rounded-lg shadow-lg' >
+                  {/* <div></div> */}
+                  <img className='h-20 m-auto' src="https://i.ibb.co/QMcGs4c/value.png" alt="" />
+                  <h3 className='my-3 text-xl font-bold'>Best Money Product</h3>
                </div>
-
-               <div className='rounded-xl shadow-xl bg-white'>
-                  <div className='p-5 flex flex-col'>
-                     <div className='rounded-xl overflow-hidden flex'>
-                        <div className='w-[25%]'>
-                           <img className='m-auto' src="https://rb.gy/k5ho8" alt="" />
-                        </div>
-                        <div className='w-[75%] ml-8'>
-                           <h1 className='text-2xl font-medium mb-6 text-green-500'>Pet Adoption</h1>
-                           <p className='font-medium'>Event time you check your cat or pet, we will definitely check and groom your animal at the some time</p>
-                           <div className='flex'>
-                              <p className='mt-5 font-bold'>Read More</p>
-                              <p className='mt-6 ml-3'><FaArrowRight></FaArrowRight></p>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
+               <div className='bg-sky-100 p-5 rounded-lg shadow-lg'>
+                  <div></div>
+                  <img className='h-20 m-auto' src="https://i.ibb.co/P1gjQSy/material.png" alt="" />
+                  <h3 className='my-3 text-xl font-bold'>High Quality</h3>
                </div>
-
-               <div className='rounded-xl shadow-xl bg-white'>
-                  <div className='p-5 flex flex-col'>
-                     <div className='rounded-xl overflow-hidden flex'>
-                        <div className='w-[25%]'>
-                           <img className='m-auto' src="https://rb.gy/ig0pg" alt="" />
-                        </div>
-                        <div className='w-[75%] ml-8'>
-                           <h1 className='text-2xl font-medium mb-6 text-green-500'>Natural Products</h1>
-                           <p className='font-medium'>Event time you check your cat or pet, we will definitely check and groom your animal at the some time</p>
-                           <div className='flex'>
-                              <p className='mt-5 font-bold'>Read More</p>
-                              <p className='mt-6 ml-3'><FaArrowRight></FaArrowRight></p>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-
-               <div className='rounded-xl shadow-xl bg-white'>
-                  <div className='p-5 flex flex-col'>
-                     <div className='rounded-xl overflow-hidden flex'>
-                        <div className='w-[25%]'>
-                           <img className='m-auto' src="https://rb.gy/wpsde" alt="" />
-                        </div>
-                        <div className='w-[75%] ml-8'>
-                           <h1 className='text-2xl font-medium mb-6 text-green-500'>Pet Vaccination</h1>
-                           <p className='font-medium'>Event time you check your cat or pet, we will definitely check and groom your animal at the some time</p>
-                           <div className='flex'>
-                              <p className='mt-5 font-bold'>Read More</p>
-                              <p className='mt-6 ml-3'><FaArrowRight></FaArrowRight></p>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-
-               <div className='rounded-xl shadow-xl bg-white'>
-                  <div className='p-5 flex flex-col'>
-                     <div className='rounded-xl overflow-hidden flex'>
-                        <div className='w-[25%]'>
-                           <img className='m-auto' src="https://rb.gy/11ec6" alt="" />
-                        </div>
-                        <div className='w-[75%] ml-8'>
-                           <h1 className='text-2xl font-medium mb-6 text-green-500'>Pet Foods</h1>
-                           <p className='font-medium'>Event time you check your cat or pet, we will definitely check and groom your animal at the some time</p>
-                           <div className='flex'>
-                              <p className='mt-5 font-bold'>Read More</p>
-                              <p className='mt-6 ml-3'><FaArrowRight></FaArrowRight></p>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
+               <div className='bg-sky-100 p-5 rounded-lg shadow-lg'>
+                  <div></div>
+                  <img className='h-20 m-auto' src="https://i.ibb.co/JRBzFvQ/support.png" alt="" />
+                  <h3 className='my-3 text-xl font-bold'>24/7 Best Support</h3>
                </div>
             </div>
          </div>
