@@ -1,14 +1,41 @@
 import { Link, NavLink } from "react-router-dom";
-import logo from "../../assets/robort logo.png"
+import logo from "../../assets/images.png"
+import { useContext } from "react";
+import { AuthContext } from "../../providers/AuthProvider";
 
 const NavBar = () => {
+   const { users, userLogOut } = useContext(AuthContext)
+
+   const handleLogOut = () => {
+      userLogOut()
+         .then()
+         .catch((error) => {
+            console.log(error)
+         });
+   }
+
    const navItems = <>
-      <NavLink to="/" className='mr-5' style={({ isActive, isPending }) => {
-         return { fontWeight: isActive ? "bold" : "", color: isPending ? "red" : "#0081a7", };
+      <NavLink to="/" className='text-[18px] btn btn-ghost' style={({ isActive, isPending }) => {
+         return { fontWeight: isActive ? "bold" : "", color: isPending ? "red" : "#E57C23", };
       }}> Home </NavLink>
-      <NavLink to="/blog" className='mr-5' style={({ isActive, isPending }) => {
-         return { fontWeight: isActive ? "bold" : "", color: isPending ? "red" : "#0081a7", };
-      }}> Blog </NavLink>
+      
+      <NavLink to="/all-toy" className='text-[18px] btn btn-ghost' style={({ isActive, isPending }) => {
+         return { fontWeight: isActive ? "bold" : "", color: isPending ? "red" : "#E57C23", };
+      }}>  All Toys </NavLink>
+
+      {users && <>
+         <NavLink to="/add-toy" className='text-[18px] btn btn-ghost' style={({ isActive, isPending }) => {
+            return { fontWeight: isActive ? "bold" : "", color: isPending ? "red" : "#E57C23", };
+         }}> Add A Toy </NavLink>
+
+         <NavLink to="/my-toys" className='text-[18px] btn btn-ghost' style={({ isActive, isPending }) => {
+            return { fontWeight: isActive ? "bold" : "", color: isPending ? "red" : "#E57C23", };
+         }}> My Toys </NavLink>
+      </>}
+
+      <NavLink to="/blog" className='text-[18px] btn btn-ghost' style={({ isActive, isPending }) => {
+         return { fontWeight: isActive ? "bold" : "", color: isPending ? "red" : "#E57C23", };
+      }}> Blogs </NavLink>
    </>
 
    return (
@@ -24,7 +51,7 @@ const NavBar = () => {
                   </ul>
                </div>
                <Link to="/"><img src={logo} alt="Logo" className="w-16" /></Link>
-               <a className="text-2xl font-bold ml-2">Robotics Toys</a>
+               <Link to="/" className="text-2xl font-bold ml-2 text-[#E57C23]">Robotices Toys</Link>
             </div>
 
             <div className="navbar-center hidden lg:flex">
@@ -34,15 +61,19 @@ const NavBar = () => {
             </div>
 
             <div className="navbar-end">
-               <div className="avatar tooltip tooltip-left mr-4" data-tip="hello">
-                  <div className="w-11 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2 ml-2">
-                     <img src="https://rb.gy/dd1d9" />
-                  </div>
-               </div>
+               {users &&
+                  <div className="avatar tooltip tooltip-left mr-4" data-tip={users?.displayName}>
+                  <div className="w-11 rounded-full ring  ring-offset-base-100 ring-offset-2 ml-2">
+                        <img src={users?.photoURL} />
+                     </div>
+               </div>}
 
-               <Link to="/login">
-                  <button className="btn bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 border-none">LOGIN IN</button>
-               </Link>
+               {users ?
+                  <button onClick={handleLogOut} className='btn rounded-sm bg-gradient-to-r from-emerald-400 to-purple-400 hover:from-pink-500 hover:to-yellow-500 border-none '>Log Out</button> :
+                  <Link to="/login">
+                     <button className='btn rounded-sm bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 border-none'>Log In</button>
+                  </Link>
+               }
             </div>
          </div>
       </div>

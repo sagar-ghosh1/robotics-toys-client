@@ -6,6 +6,14 @@ import Register from "../pages/Register/Register";
 import NotFound from "../pages/NotFound/NotFound";
 import Blog from "../pages/Blog/Blog";
 import LoginLayout from "../Layouts/LoginLayout";
+import PrivateRoute from "./PrivateRoute";
+import AllToys from "../pages/toys/AllToys/AllToys";
+import AddAToy from "../pages/toys/AddAToy/AddAToy";
+import MyToys from "../pages/toys/MyToys/MyToys";
+import ToyDetails from "../pages/toys/ToyDetails/ToyDetails";
+import UpdateToy from "../pages/toys/MyToys/UpdateToy";
+import ShopCategory from "../pages/ShopCategory/ShopCategory";
+import CategoryDetails from "../pages/ShopCategory/CategoryDetails";
 
 const router = createBrowserRouter([
    {
@@ -33,8 +41,41 @@ const router = createBrowserRouter([
          {
             path: "register",
             element: <Register></Register>
-         },
+         }
       ],
+   },
+   {
+      path: "/",
+      element: <LoginLayout></LoginLayout>,
+      children: [
+         {
+            path: "/all-toy",
+            element: <AllToys></AllToys>,
+         },
+         {
+            path: "/toy-details/:id",
+            element: <PrivateRoute><ToyDetails></ToyDetails></PrivateRoute>,
+            loader: ({ params }) => fetch(`http://localhost:5000/toy/${params.id}`),
+         },
+         {
+            path: "/add-toy",
+            element: <PrivateRoute><AddAToy></AddAToy></PrivateRoute>
+         },
+         {
+            path: "/my-toys",
+            element: <PrivateRoute><MyToys></MyToys></PrivateRoute>,
+         },
+         {
+            path: "/update/:id",
+            element: <UpdateToy></UpdateToy>,
+            loader: ({ params }) => fetch(`http://localhost:5000/toy/${params.id}`)
+         },
+         {
+            path: "/category-detail/:id",
+            element: <PrivateRoute><CategoryDetails></CategoryDetails></PrivateRoute>,
+            loader: ({ params }) => fetch(`http://localhost:5000/toy/${params.id}`),
+         }
+      ]
    },
    {
       path: "*",
