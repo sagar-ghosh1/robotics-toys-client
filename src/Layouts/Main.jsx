@@ -8,6 +8,7 @@ const Main = () => {
       <div className="container m-auto rounded">
          <NavBar></NavBar>
          <Banner></Banner>
+         <Footer></Footer>
          <Outlet></Outlet>
          {/* <Footer></Footer> */}
       </div>
