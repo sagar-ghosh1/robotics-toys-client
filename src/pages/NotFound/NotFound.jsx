@@ -10,7 +10,7 @@ const NotFound = () => {
           </div>
           <h1 className="text-5xl font-bold"> <span className='text-slate-500 hover:text-blue-600'>Oops!!!</span> <br />Page not found</h1>
           <p className="py-6">The page you are looking for could not be found. plz back to home....</p>
-          <button className="btn bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 border-none">Back to Home</button>
+          <button className="btn bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 border-none " data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1000">Back to Home</button>
         </div>
       </div>
     </div>
