@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { Navigate, useLocation } from 'react-router-dom';
-import { Circles } from 'react-loader-spinner';
+import { Puff } from 'react-loader-spinner';
 import { AuthContext } from '../providers/AuthProvider';
 
 const PrivateRoute = ({ children }) => {
@@ -10,11 +10,12 @@ const PrivateRoute = ({ children }) => {
    if (loading) {
       return (
          <div className='min-h-screen bg-slate-200'>
-            <Circles
-               height="90"
+            <Puff
+               height="100"
                width="100%"
-               color="#00b4d8"
-               ariaLabel="circles-loading"
+               radius={1}
+               color="#4fa94d"
+               ariaLabel="puff-loading"
                wrapperStyle={{}}
                wrapperClass=""
                visible={true}
