@@ -6,7 +6,7 @@ const Footer = () => {
       <div>
          <footer className="footer text-white p-20 bg-[#5e5e58]">
             <div className='gap-3'>
-               <img className="h-20" src="/src/assets/robort logo.png" alt="" />
+               <img className="h-20" src="https://i.ibb.co/37g9qMt/project-logo.png" alt="" />
                <h1 className="text-2xl font-bold">Robotics Toys</h1>
 
                <p className="font-medium">Robotics Toys Industries Ltd.<br />Providing tech since 2005</p>

@@ -1,5 +1,4 @@
 import { Link, NavLink } from "react-router-dom";
-import logo from "../../assets/images.png"
 import { useContext } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
 
@@ -18,7 +17,7 @@ const NavBar = () => {
       <NavLink to="/" className='text-[18px] btn btn-ghost' style={({ isActive, isPending }) => {
          return { fontWeight: isActive ? "bold" : "", color: isPending ? "red" : "#E57C23", };
       }}> Home </NavLink>
-      
+
       <NavLink to="/all-toy" className='text-[18px] btn btn-ghost' style={({ isActive, isPending }) => {
          return { fontWeight: isActive ? "bold" : "", color: isPending ? "red" : "#E57C23", };
       }}>  All Toys </NavLink>
@@ -50,7 +49,7 @@ const NavBar = () => {
                      {navItems}
                   </ul>
                </div>
-               <Link to="/"><img src={logo} alt="Logo" className="w-16" /></Link>
+               <Link to="/"><img src="https://i.ibb.co/37g9qMt/project-logo.png" alt="Logo" className="w-16" /></Link>
                <Link to="/" className="text-2xl font-bold ml-2 text-[#E57C23]">Robotices Toys</Link>
             </div>
 
@@ -63,10 +62,10 @@ const NavBar = () => {
             <div className="navbar-end">
                {users &&
                   <div className="avatar tooltip tooltip-left mr-4" data-tip={users?.displayName}>
-                  <div className="w-11 rounded-full ring  ring-offset-base-100 ring-offset-2 ml-2">
+                     <div className="w-11 rounded-full ring  ring-offset-base-100 ring-offset-2 ml-2">
                         <img src={users?.photoURL} />
                      </div>
-               </div>}
+                  </div>}
 
                {users ?
                   <button onClick={handleLogOut} className='btn rounded-sm bg-gradient-to-r from-emerald-400 to-purple-400 hover:from-pink-500 hover:to-yellow-500 border-none '>Log Out</button> :
