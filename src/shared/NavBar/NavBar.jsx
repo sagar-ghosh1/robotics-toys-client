@@ -68,9 +68,9 @@ const NavBar = () => {
                   </div>}
 
                {users ?
-                  <button onClick={handleLogOut} className='btn rounded-sm bg-gradient-to-r from-emerald-400 to-purple-400 hover:from-pink-500 hover:to-yellow-500 border-none '>Log Out</button> :
+                  <button onClick={handleLogOut} className='btn rounded-sm bg-gradient-to-r from-orange-400 to-green-400 hover:from-green-500 hover:to-orange-500 border-none '>Log Out</button> :
                   <Link to="/login">
-                     <button className='btn rounded-sm bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 border-none'>Log In</button>
+                     <button className='btn rounded-sm bg-gradient-to-r from-orange-400 to-green-500 hover:from-green-500 hover:to-orange-500 border-none'>Log In</button>
                   </Link>
                }
             </div>

@@ -49,7 +49,7 @@ const AddAToy = () => {
    return (
       <div>
          <h2 className='text-4xl text-center text-stone-700 font-semibold my-5'>Add A Toy</h2>
-         <div className='max-w-4xl mx-auto px-8'>
+         <div className='max-w-4xl mx-auto px-8 mb-10'>
             <form onSubmit={handleAddToy}>
 
                <div className="md:flex justify-center gap-5 mb-2">
@@ -123,7 +123,7 @@ const AddAToy = () => {
                   <textarea name='details' className="textarea textarea-bordered text-[16px] h-28" placeholder="Toy Detail description" required></textarea>
                </div>
 
-               <input type="submit" value="Add a Toy" className="btn btn-block bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 rounded-md border-none mt-6" />
+               <input type="submit" value="Add a Toy" className="btn btn-block bg-gradient-to-r from-orange-400 to-green-500 hover:from-green-500 hover:to-orange-500 rounded-md border-none mt-6" />
             </form>
          </div>
       </div>
