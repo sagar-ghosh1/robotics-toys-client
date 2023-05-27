@@ -5,8 +5,8 @@ const Products = () => {
    return (
       <div className='container m-auto'>
          <div className='mt=14 mb-14'>
-            <h1 className='text-4xl text-center'>Frequently Asked Questions</h1>
-            <p className='text-center mt-2 mb-9'>Find your answer</p>
+            <h1 className='text-4xl text-center font-bold'>We Best Offer</h1>
+            <p className='text-center mt-2 mb-9 font-bold'>Find your answer...</p>
             <div className='grid grid-cols-2 md:grid-cols-4 gap-4 text-center'>
                <div className='bg-sky-100 p-5 rounded-lg shadow-lg' data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
 
