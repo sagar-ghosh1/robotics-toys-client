@@ -3,8 +3,8 @@ import { AiOutlineMail } from "react-icons/ai";
 
 const Footer = () => {
    return (
-      <div>
-         <footer className="footer text-white p-20 bg-[#5e5e58]">
+      <div className='bg-[#5e5e58]'>
+         <footer className="footer text-white p-20 container m-auto">
             <div className='gap-3'>
                <img className="h-20" src="https://i.ibb.co/37g9qMt/project-logo.png" alt="" />
                <h1 className="text-2xl font-bold">Robotics Toys</h1>
