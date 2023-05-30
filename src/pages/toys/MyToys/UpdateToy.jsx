@@ -49,22 +49,6 @@ const UpdateToy = () => {
          <div className='max-w-4xl mx-auto px-8'>
             <form onSubmit={handleUpdateToy}>
 
-               {/* <div className="md:flex justify-center gap-5 mb-2">
-                  <div className="form-control md:w-1/2">
-                     <label className="label">
-                        <span className="label-text text-[16px] font-semibold">Seller Name</span>
-                     </label>
-                     <input type="text" name="sellerName" defaultValue={users?.displayName} placeholder="Seller name" required className="input input-bordered w-full" />
-                  </div>
-
-                  <div className="form-control md:w-1/2">
-                     <label className="label">
-                        <span className="label-text text-[16px] font-semibold">Seller Email</span>
-                     </label>
-                     <input type="text" name="sellerEmail" defaultValue={users?.email} placeholder="Seller Email" required className="input input-bordered w-full" />
-                  </div>
-               </div> */}
-
                <div className="md:flex justify-center gap-5 mb-2">
                   <div className="form-control md:w-1/2">
                      <label className="label">
@@ -80,22 +64,6 @@ const UpdateToy = () => {
                      <input type="text" name="photo" defaultValue={toy.photo} placeholder="https://exmple.png" required className="input input-bordered w-full" />
                   </div>
                </div>
-
-               {/* <div className="md:flex justify-center gap-5 mb-2">
-                  <div className="form-control md:w-1/2">
-                     <label className="label">
-                        <span className="label-text text-[16px] font-semibold">Sub-category</span>
-                     </label>
-                     <input type="text" name="category" placeholder="Teddy Bear" required className="input input-bordered w-full" />
-                  </div>
-
-                  <div className="form-control md:w-1/2">
-                     <label className="label">
-                        <span className="label-text text-[16px] font-semibold">Rating</span>
-                     </label>
-                     <input type="text" name="rating" placeholder="Rating" required className="input input-bordered w-full" />
-                  </div>
-               </div> */}
 
                <div className="md:flex justify-center gap-5 mb-2">
                   <div className="form-control md:w-1/2">
@@ -120,7 +88,7 @@ const UpdateToy = () => {
                   <textarea name='details' className="textarea textarea-bordered text-[16px] h-28" defaultValue={toy.details} placeholder="Toy Detail description" required></textarea>
                </div>
 
-               <input type="submit" value="Update a Toy" className="btn btn-block bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 rounded-md border-none mt-6 text-[16px] capitalize" />
+               <input type="submit" value="Update a Toy" className="btn btn-block bg-gradient-to-r from-orange-400 to-green-500 hover:from-green-500 hover:to-orange-500 rounded-md border-none mt-6 text-[16px] capitalize mb-10" />
             </form>
          </div>
       </div>
