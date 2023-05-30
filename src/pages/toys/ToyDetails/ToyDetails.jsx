@@ -11,11 +11,11 @@ const ToyDetails = () => {
    const { sellerName, sellerEmail, toyName, photo, rating, price, quantity, details } = toy;
 
    return (
-      <div className='bg-base-200 py-20'>
+      <div className='bg-sky-50 py-20'>
          <div>
             <div className="md:flex">
                <div className="block mx-auto">
-                  <img src={photo} className="w-[550px] h-[420px] rounded-md border border-sky-200 shadow-md" />
+                  <img src={photo} className="w-[550px] h-[420px] rounded-md border border-gray-200 shadow-md" />
                </div>
                <div className="flex-col md:flex-row w-1/2 pl-5">
                   <div>
@@ -44,11 +44,11 @@ const ToyDetails = () => {
                </div>
             </div>
 
-            <div className='md:w-9/12 md:ml-10 px-5'>
+            <div className='md:w-9/12 md:ml-10 pl-40'>
                <h2 className='text-3xl text-stone-700 font-semibold mt-10 mb-4'>Toy Details of {toyName}</h2>
                <p><span className='text-[17px] font-bold'>Details: </span>{details}</p>
 
-               <Link to="/all-toy" className="btn bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 rounded-md border-none capitalize text-[15px] mt-8"> <FaArrowLeft className="mr-2" /> All Toys</Link>
+               <Link to="/all-toy" className="btn bg-gradient-to-r from-orange-400 to-green-500 hover:from-green-500 hover:to-orange-500 rounded-md border-none capitalize text-[15px] mt-8"> <FaArrowLeft className="mr-2" /> All Toys</Link>
             </div>
          </div>
       </div>
