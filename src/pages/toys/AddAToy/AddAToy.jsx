@@ -47,7 +47,7 @@ const AddAToy = () => {
    }
 
    return (
-      <div>
+      <div className='bg-sky-50'>
          <h2 className='text-4xl text-center text-stone-700 font-semibold my-5'>Add A Toy</h2>
          <div className='max-w-4xl mx-auto px-8 mb-10'>
             <form onSubmit={handleAddToy}>
