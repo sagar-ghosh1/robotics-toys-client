@@ -5,7 +5,7 @@ import ShopCard from './ShopCard';
 
 const ShopCategory = () => {
    const [allToy, setAllToy] = useState([]);
-   const [activeTab, setActiveTab] = useState('Cat');
+   const [activeTab, setActiveTab] = useState('medical');
    console.log(allToy);
 
    useEffect(() => {
