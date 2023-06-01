@@ -12,7 +12,14 @@ const ToyDetails = () => {
 
    return (
       <div className='bg-sky-50 py-20'>
-         <div>
+         <div className="">
+            <div className='md:w-9/12 md:ml-10 pl-40 mb-10'>
+               <h2 className='text-3xl text-stone-700 font-semibold mt-10 mb-4'>Toy Details of {toyName}</h2>
+               <p><span className='text-[17px] font-bold'>Details: </span>{details}</p>
+
+               <Link to="/all-toy" className="btn bg-gradient-to-r from-orange-400 to-green-500 hover:from-green-500 hover:to-orange-500 rounded-md border-none capitalize text-[15px] mt-8"> <FaArrowLeft className="mr-2" /> All Toys</Link>
+            </div>
+
             <div className="md:flex">
                <div className="block mx-auto">
                   <img src={photo} className="w-[550px] h-[420px] rounded-md border border-gray-200 shadow-md" />
@@ -44,12 +51,7 @@ const ToyDetails = () => {
                </div>
             </div>
 
-            <div className='md:w-9/12 md:ml-10 pl-40'>
-               <h2 className='text-3xl text-stone-700 font-semibold mt-10 mb-4'>Toy Details of {toyName}</h2>
-               <p><span className='text-[17px] font-bold'>Details: </span>{details}</p>
 
-               <Link to="/all-toy" className="btn bg-gradient-to-r from-orange-400 to-green-500 hover:from-green-500 hover:to-orange-500 rounded-md border-none capitalize text-[15px] mt-8"> <FaArrowLeft className="mr-2" /> All Toys</Link>
-            </div>
          </div>
       </div>
    );
