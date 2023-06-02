@@ -10,7 +10,7 @@ const CategoryDetails = () => {
       <div>
          <div className="hero min-h-screen bg-sky-50">
             <div className="hero-content flex-col">
-               <img src={photo} className="max-w-md rounded-lg shadow-2xl" />
+               <img src={photo} className="w-[950px] rounded-lg shadow-2xl" />
                <div>
                   <h1 className="text-5xl font-bold">{toyName}</h1>
                   <p className="pt-6 pb-2"><span className='text-[17px] font-bold'>Price: </span>${price}</p>
