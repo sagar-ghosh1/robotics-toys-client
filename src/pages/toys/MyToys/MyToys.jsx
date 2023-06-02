@@ -9,7 +9,7 @@ const MyToys = () => {
    const [toy, setToy] = useState([]);
    const [asc, setAsc] = useState(true);
 
-   const url = `http://localhost:5000/myToys/${users.email}?sort=${asc ? 'asc' : 'desc'}`;
+   const url = `https://robotics-toys-server-sagar-ghosh1.vercel.app/myToys/${users.email}?sort=${asc ? 'asc' : 'desc'}`;
    useEffect(() => {
       fetch(url)
          .then((res) => res.json())

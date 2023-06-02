@@ -9,7 +9,7 @@ const ShopCategory = () => {
    console.log(allToy);
 
    useEffect(() => {
-      fetch(`http://localhost:5000/subCategory/${activeTab}`)
+      fetch(`https://robotics-toys-server-sagar-ghosh1.vercel.app/subCategory/${activeTab}`)
          .then(res => res.json())
          .then(data => {
             setAllToy(data);

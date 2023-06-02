@@ -22,7 +22,7 @@ const UpdateToy = () => {
       console.log(updateToy);
 
       // send toy data to the server
-      fetch(`http://localhost:5000/toy/${_id}`, {
+      fetch(`https://robotics-toys-server-sagar-ghosh1.vercel.app/toy/${_id}`, {
          method: 'PUT',
          headers: {
             'content-type': 'application/json',

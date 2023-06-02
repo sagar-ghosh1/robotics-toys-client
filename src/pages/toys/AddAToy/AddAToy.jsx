@@ -25,7 +25,7 @@ const AddAToy = () => {
       console.log(newToy);
 
       // send toy data to the server
-      fetch('http://localhost:5000/toy', {
+      fetch('https://robotics-toys-server-sagar-ghosh1.vercel.app/toy', {
          method: 'POST',
          headers: {
             'content-type': 'application/json',

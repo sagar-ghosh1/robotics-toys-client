@@ -55,7 +55,7 @@ const router = createBrowserRouter([
          {
             path: "/toy-details/:id",
             element: <PrivateRoute><ToyDetails></ToyDetails></PrivateRoute>,
-            loader: ({ params }) => fetch(`http://localhost:5000/toy/${params.id}`),
+            loader: ({ params }) => fetch(`https://robotics-toys-server-sagar-ghosh1.vercel.app/toy/${params.id}`),
          },
          {
             path: "/add-toy",
@@ -68,12 +68,12 @@ const router = createBrowserRouter([
          {
             path: "/update/:id",
             element: <UpdateToy></UpdateToy>,
-            loader: ({ params }) => fetch(`http://localhost:5000/toy/${params.id}`)
+            loader: ({ params }) => fetch(`https://robotics-toys-server-sagar-ghosh1.vercel.app/toy/${params.id}`)
          },
          {
             path: "/category-detail/:id",
             element: <PrivateRoute><CategoryDetails></CategoryDetails></PrivateRoute>,
-            loader: ({ params }) => fetch(`http://localhost:5000/toy/${params.id}`),
+            loader: ({ params }) => fetch(`https://robotics-toys-server-sagar-ghosh1.vercel.app/toy/${params.id}`),
          }
       ]
    },

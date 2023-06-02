@@ -9,7 +9,7 @@ const AllToys = () => {
    const [search, setSearch] = useState('')
    const searchRef = useRef(null);
 
-   const url = `http://localhost:5000/toy?search=${search}`;
+   const url = `https://robotics-toys-server-sagar-ghosh1.vercel.app/toy?search=${search}`;
    useEffect(() => {
       fetch(url)
          .then((res) => res.json())
